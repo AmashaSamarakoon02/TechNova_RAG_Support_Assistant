@@ -1,0 +1,535 @@
+{
+  "summary": {
+    "total_questions": 29,
+    "passed": 26,
+    "failed": 3,
+    "retrieval_precision": 0.0,
+    "keyword_score_avg": 0.799,
+    "llm_score_avg": 0.828,
+    "refused_correctly": true
+  },
+  "per_question": [
+    {
+      "id": "q01",
+      "category": "products",
+      "question": "What is the battery capacity of the Nova Phone X1 and how fast does it charge?",
+      "predicted_answer": "I don't have that information in my knowledge base.",
+      "retrieved_sources": [
+        "support_tickets\\ticket_001.md",
+        "products\\nova_phone_x1.md",
+        "faqs\\troubleshooting.md",
+        "products\\nova_phone_x1.md",
+        "release_notes\\novawatch_os_4_1.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 0.0,
+      "passed": false,
+      "llm_score": 0.0,
+      "llm_reason": "The student did not provide any relevant information about the battery capacity or charging speed."
+    },
+    {
+      "id": "q02",
+      "category": "products",
+      "question": "How much does the base configuration of the Nova Laptop Pro 14 cost?",
+      "predicted_answer": "The base configuration of the Nova Laptop Pro 14 (16GB / 512GB) costs $1,799 (source: products\\nova_laptop_pro.md).",
+      "retrieved_sources": [
+        "products\\nova_tablet.md",
+        "products\\nova_laptop_pro.md",
+        "products\\nova_laptop_pro.md",
+        "products\\nova_tablet.md",
+        "products\\nova_phone_x1.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The student correctly stated the cost, storage, and RAM as expected."
+    },
+    {
+      "id": "q03",
+      "category": "products",
+      "question": "Which audio codecs do the Nova Earbuds 2 support?",
+      "predicted_answer": "The Nova Earbuds 2 support the following audio codecs: SBC, AAC, LDAC, and NovaLossless (source: products\\nova_earbuds.md, key specifications).",
+      "retrieved_sources": [
+        "products\\nova_earbuds.md",
+        "products\\nova_earbuds.md",
+        "products\\nova_speaker.md",
+        "products\\nova_speaker.md",
+        "products\\nova_speaker.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The student correctly listed all the expected audio codecs supported by the Nova Earbuds 2."
+    },
+    {
+      "id": "q04",
+      "category": "products",
+      "question": "Is the Nova Watch Series 3 compatible with iPhones?",
+      "predicted_answer": "I don't have that information in my knowledge base.",
+      "retrieved_sources": [
+        "products\\nova_smartwatch.md",
+        "release_notes\\novawatch_os_4_1.md",
+        "release_notes\\novawatch_os_4_1.md",
+        "products\\nova_earbuds.md",
+        "release_notes\\novawatch_os_4_1.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 0.0,
+      "passed": false,
+      "llm_score": 0.0,
+      "llm_reason": "The student did not provide any relevant information about compatibility, iOS, or notifications."
+    },
+    {
+      "id": "q05",
+      "category": "faqs",
+      "question": "How long does standard shipping take in the US and is it free?",
+      "predicted_answer": "Standard shipping within the continental US takes 3\u20135 business days. It is free on orders over $50; otherwise, it costs $5.99 (source: 1, 2).",
+      "retrieved_sources": [
+        "faqs\\shipping.md",
+        "policies\\shipping_policy.md",
+        "policies\\shipping_policy.md",
+        "faqs\\shipping.md",
+        "faqs\\payments.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 0.667,
+      "passed": true,
+      "llm_score": 0.8,
+      "llm_reason": "The answer correctly states the shipping time and that it is free on orders over $50, but incorrectly mentions a $5.99 fee otherwise, which was not specified in the expected facts."
+    },
+    {
+      "id": "q06",
+      "category": "faqs",
+      "question": "Can I return earbuds after I have opened them?",
+      "predicted_answer": "No, you cannot return earbuds after opening them due to hygiene reasons, as the hygienic seal has been broken. (source: policies\\return_policy.md)",
+      "retrieved_sources": [
+        "support_tickets\\ticket_002.md",
+        "policies\\return_policy.md",
+        "faqs\\returns.md",
+        "policies\\return_policy.md",
+        "faqs\\returns.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 0.5,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The answer correctly states that earbuds cannot be returned after opening due to hygiene reasons and the broken hygienic seal."
+    },
+    {
+      "id": "q07",
+      "category": "faqs",
+      "question": "What two-factor authentication methods does TechNova support?",
+      "predicted_answer": "TechNova supports the following two-factor authentication methods:\n- SMS code (less secure but easy)\n- Authenticator app (recommended)\n- Hardware security key (FIDO2) (source: 1/account.md)",
+      "retrieved_sources": [
+        "faqs\\account.md",
+        "policies\\terms_of_service.md",
+        "policies\\privacy_policy.md",
+        "faqs\\payments.md",
+        "policies\\terms_of_service.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 0.8,
+      "llm_reason": "The student correctly identified SMS, authenticator app, and hardware security key as supported methods, with minor omission of explicit mention that these are the only methods supported."
+    },
+    {
+      "id": "q08",
+      "category": "policies",
+      "question": "What is the return window for NovaCare+ members?",
+      "predicted_answer": "The return window for NovaCare+ members is extended to 45 days (source: policies\\return_policy.md).",
+      "retrieved_sources": [
+        "policies\\return_policy.md",
+        "company\\contact.md",
+        "policies\\warranty_policy.md",
+        "faqs\\warranty.md",
+        "policies\\return_policy.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The student correctly stated the return window as 45 days and included the source, matching the expected facts."
+    },
+    {
+      "id": "q09",
+      "category": "policies",
+      "question": "Within how many days of purchase can I add NovaCare+ to my product?",
+      "predicted_answer": "You can add NovaCare+ within **60 days** of your original purchase (source: faqs\\warranty.md, policies\\warranty_policy.md).",
+      "retrieved_sources": [
+        "faqs\\warranty.md",
+        "policies\\warranty_policy.md",
+        "faqs\\warranty.md",
+        "policies\\warranty_policy.md",
+        "policies\\return_policy.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The student correctly states the time frame of 60 days and cites the source, fully matching the expected facts."
+    },
+    {
+      "id": "q10",
+      "category": "policies",
+      "question": "Within what timeframe will TechNova notify me of a data breach affecting my information?",
+      "predicted_answer": "TechNova will notify you within 72 hours in the event of a data breach affecting your personal data (source: policies\\privacy_policy.md).",
+      "retrieved_sources": [
+        "policies\\privacy_policy.md",
+        "faqs\\software_updates.md",
+        "policies\\privacy_policy.md",
+        "policies\\terms_of_service.md",
+        "policies\\terms_of_service.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The student correctly states that TechNova will notify within 72 hours of a data breach affecting your personal data."
+    },
+    {
+      "id": "q11",
+      "category": "policies",
+      "question": "Does my battery qualify for a warranty replacement if it holds 75% capacity after 8 months?",
+      "predicted_answer": "Yes, your battery qualifies for a warranty replacement if it holds less than 80% of its original capacity within the warranty period, which is 1 year. Since your battery is at 75% after 8 months, it falls below the 80% threshold (source: faqs\\warranty.md).",
+      "retrieved_sources": [
+        "faqs\\warranty.md",
+        "faqs\\warranty.md",
+        "policies\\warranty_policy.md",
+        "policies\\warranty_policy.md",
+        "policies\\warranty_policy.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 0.5,
+      "passed": true,
+      "llm_score": 0.8,
+      "llm_reason": "The student correctly states the threshold and the battery's current capacity but omits that the capacity is below 80%, which is necessary for warranty coverage."
+    },
+    {
+      "id": "q12",
+      "category": "support_tickets",
+      "question": "Was the customer in ticket 004 covered for the cracked screen on their Nova Watch?",
+      "predicted_answer": "No, the cracked screen was classified as physical damage, which is NOT covered under the standard 1-year warranty. (source: support_tickets\\ticket_004.md)",
+      "retrieved_sources": [
+        "support_tickets\\ticket_004.md",
+        "support_tickets\\ticket_004.md",
+        "support_tickets\\ticket_006.md",
+        "support_tickets\\ticket_006.md",
+        "policies\\warranty_policy.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 0.667,
+      "passed": true,
+      "llm_score": 0.8,
+      "llm_reason": "The answer correctly states that the cracked screen was physical damage and not covered, but omits the specific cost of $189."
+    },
+    {
+      "id": "q13",
+      "category": "support_tickets",
+      "question": "How did TechNova handle the lost laptop shipment in ticket 003?",
+      "predicted_answer": "TechNova reshipped a replacement laptop via overnight shipping at no extra cost, refunded the $14.99 express shipping fee as compensation, and the customer received the replacement in 2 days. (source: support_tickets\\ticket_003.md)",
+      "retrieved_sources": [
+        "policies\\shipping_policy.md",
+        "faqs\\shipping.md",
+        "support_tickets\\ticket_003.md",
+        "support_tickets\\ticket_008.md",
+        "support_tickets\\ticket_008.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 0.8,
+      "llm_reason": "The answer correctly states the overnight reshipment and refund, but mentions the customer received the replacement in 2 days instead of the expected overnight delivery, which is a minor omission."
+    },
+    {
+      "id": "q14",
+      "category": "company",
+      "question": "Where is TechNova headquartered and when was it founded?",
+      "predicted_answer": "TechNova is headquartered in Austin, Texas, and was founded in 2018 (source: company\\about.md).",
+      "retrieved_sources": [
+        "company\\contact.md",
+        "company\\about.md",
+        "company\\careers.md",
+        "company\\careers.md",
+        "company\\contact.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The student correctly stated both the headquarters location and the founding year as expected."
+    },
+    {
+      "id": "q15",
+      "category": "company",
+      "question": "What is the phone number for NovaCare+ priority support?",
+      "predicted_answer": "The phone number for NovaCare+ priority support is 1-800-NOVA-CARE. (source: 1)",
+      "retrieved_sources": [
+        "company\\contact.md",
+        "faqs\\warranty.md",
+        "faqs\\warranty.md",
+        "policies\\warranty_policy.md",
+        "company\\contact.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The student provided the exact expected phone number for NovaCare+ priority support."
+    },
+    {
+      "id": "q16",
+      "category": "out_of_scope",
+      "question": "What is the weather in Paris tomorrow?",
+      "predicted_answer": "I don't have that information in my knowledge base.",
+      "retrieved_sources": [
+        "policies\\shipping_policy.md",
+        "faqs\\shipping.md",
+        "products\\nova_tablet.md",
+        "products\\nova_phone_x1.md",
+        "products\\nova_smartwatch.md"
+      ],
+      "retrieval_hit": true,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The answer correctly indicates a lack of information but does not explicitly mention the expected facts like 'don't know', 'not have', or 'cannot'."
+    },
+    {
+      "id": "q17",
+      "category": "products",
+      "question": "How much does the Nova Tablet 11 with 256GB Wi-Fi cost and what's the stylus called?",
+      "predicted_answer": "The Nova Tablet 11 with 256GB Wi-Fi costs $579 (source: products\\nova_tablet.md). The stylus is called Nova Pen 2 (source: products\\nova_tablet.md).",
+      "retrieved_sources": [
+        "products\\nova_tablet.md",
+        "products\\nova_tablet.md",
+        "products\\nova_tablet.md",
+        "products\\nova_phone_x1.md",
+        "support_tickets\\ticket_005.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The student correctly stated both the price and the stylus name with proper sources."
+    },
+    {
+      "id": "q18",
+      "category": "products",
+      "question": "What is the power output of the Nova Sound Max speaker?",
+      "predicted_answer": "The power output of the Nova Sound Max speaker is 90W (source: products\\nova_speaker.md).",
+      "retrieved_sources": [
+        "products\\nova_speaker.md",
+        "products\\nova_speaker.md",
+        "products\\nova_speaker.md",
+        "support_tickets\\ticket_007.md",
+        "faqs\\troubleshooting.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The student correctly stated the power output as 90W and cited the source."
+    },
+    {
+      "id": "q19",
+      "category": "faqs",
+      "question": "What financing options does TechNova offer in the US?",
+      "predicted_answer": "I don't have that information in my knowledge base.",
+      "retrieved_sources": [
+        "policies\\terms_of_service.md",
+        "faqs\\trade_in.md",
+        "company\\contact.md",
+        "faqs\\trade_in.md",
+        "company\\about.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 0.0,
+      "passed": false,
+      "llm_score": 0.0,
+      "llm_reason": "The student did not provide any of the expected facts about TechNova's financing options in the US."
+    },
+    {
+      "id": "q20",
+      "category": "faqs",
+      "question": "How do I force restart my Nova Phone X1 if it won't turn on?",
+      "predicted_answer": "To force restart your Nova Phone X1, press and hold the Power + Volume Down buttons simultaneously for 10 seconds (source: faqs\\troubleshooting.md).",
+      "retrieved_sources": [
+        "faqs\\troubleshooting.md",
+        "release_notes\\novawatch_os_4_1.md",
+        "support_tickets\\ticket_001.md",
+        "faqs\\troubleshooting.md",
+        "products\\nova_phone_x1.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 0.8,
+      "llm_reason": "The answer correctly states the Power and Volume Down buttons and the 10-second duration, but omits explicitly mentioning the need to press both buttons simultaneously."
+    },
+    {
+      "id": "q21",
+      "category": "faqs",
+      "question": "For how many years does TechNova guarantee software updates on a Nova device?",
+      "predicted_answer": "TechNova guarantees software updates for at least **5 years** from the product's launch date (source: 1/faqs\\software_updates.md).",
+      "retrieved_sources": [
+        "faqs\\software_updates.md",
+        "company\\sustainability.md",
+        "faqs\\software_updates.md",
+        "faqs\\software_updates.md",
+        "release_notes\\novaos_5_1.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The student correctly states that TechNova guarantees software updates for at least 5 years from the product's launch date, matching the expected fact."
+    },
+    {
+      "id": "q22",
+      "category": "policies",
+      "question": "Does TechNova ship to Russia?",
+      "predicted_answer": "No, TechNova cannot ship to Russia due to local regulations and restrictions (source: policies\\shipping_policy.md).",
+      "retrieved_sources": [
+        "faqs\\shipping.md",
+        "policies\\shipping_policy.md",
+        "company\\careers.md",
+        "policies\\shipping_policy.md",
+        "company\\contact.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 0.667,
+      "passed": true,
+      "llm_score": 0.8,
+      "llm_reason": "The answer correctly states that TechNova cannot ship to Russia, aligning with the expected facts, but does not explicitly mention the suspension."
+    },
+    {
+      "id": "q23",
+      "category": "policies",
+      "question": "What is the minimum age to create a TechNova account?",
+      "predicted_answer": "The minimum age to create a TechNova account is 13 years old (source: policies\\terms_of_service.md).",
+      "retrieved_sources": [
+        "policies\\terms_of_service.md",
+        "policies\\privacy_policy.md",
+        "faqs\\account.md",
+        "company\\careers.md",
+        "policies\\terms_of_service.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The student correctly stated the minimum age as 13 and included the source, fully aligning with the expected facts."
+    },
+    {
+      "id": "q24",
+      "category": "release_notes",
+      "question": "Which NovaOS update introduced the NovaAssist on-device AI feature?",
+      "predicted_answer": "The NovaAssist on-device AI feature was introduced in the NovaOS 5.2 update. (source: release_notes\\novaos_5_2.md)",
+      "retrieved_sources": [
+        "release_notes\\novaos_5_2.md",
+        "release_notes\\novaos_5_1.md",
+        "release_notes\\novaos_5_2.md",
+        "release_notes\\novawatch_os_4_1.md",
+        "products\\nova_tablet.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The student correctly identified the NovaOS 5.2 update as the introduction point for NovaAssist on-device AI."
+    },
+    {
+      "id": "q25",
+      "category": "release_notes",
+      "question": "What new workout types were added in NovaWatch OS 4.1?",
+      "predicted_answer": "The new workout types added in NovaWatch OS 4.1 are Pilates, HIIT Cooldown, and Tai Chi (source: 1).",
+      "retrieved_sources": [
+        "release_notes\\novawatch_os_4_1.md",
+        "release_notes\\novawatch_os_4_1.md",
+        "products\\nova_smartwatch.md",
+        "products\\nova_smartwatch.md",
+        "release_notes\\novaos_5_2.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 0.8,
+      "llm_reason": "The student correctly identified Pilates, HIIT, and Tai Chi, but included 'HIIT Cooldown' instead of just 'HIIT'."
+    },
+    {
+      "id": "q26",
+      "category": "support_tickets",
+      "question": "What was the root cause of the stylus issue in ticket 005 and how was it resolved?",
+      "predicted_answer": "The root cause of the stylus issue in ticket 005 was a known problem with NovaOS Tab 3 version 3.4.1 that affected a subset of stylus drivers (source: support_tickets\\ticket_005.md). It was resolved by updating the software to version 3.4.2, after which the customer was instructed to restart both the tablet and pen, restoring full functionality (source: support_tickets\\ticket_005.md).",
+      "retrieved_sources": [
+        "support_tickets\\ticket_005.md",
+        "support_tickets\\ticket_005.md",
+        "support_tickets\\ticket_002.md",
+        "support_tickets\\ticket_006.md",
+        "support_tickets\\ticket_007.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 0.667,
+      "passed": true,
+      "llm_score": 0.8,
+      "llm_reason": "The answer correctly identified the root cause and resolution, but did not explicitly mention the specific version 3.4.1 as the root cause or include all three expected facts."
+    },
+    {
+      "id": "q27",
+      "category": "support_tickets",
+      "question": "Is the warranty on a Nova Laptop honored internationally?",
+      "predicted_answer": "Yes, TechNova provides an **International Limited Warranty** on all laptops, which is honored internationally. (source: support_tickets\\ticket_008.md)",
+      "retrieved_sources": [
+        "support_tickets\\ticket_008.md",
+        "support_tickets\\ticket_008.md",
+        "products\\nova_laptop_pro.md",
+        "faqs\\warranty.md",
+        "support_tickets\\ticket_003.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The answer correctly states that the warranty is international and specifies it as an International Limited Warranty on all laptops."
+    },
+    {
+      "id": "q28",
+      "category": "company",
+      "question": "When does TechNova aim to be carbon-neutral across its full supply chain?",
+      "predicted_answer": "TechNova aims to be carbon-neutral across its full supply chain by 2030 (source: company\\sustainability.md).",
+      "retrieved_sources": [
+        "company\\sustainability.md",
+        "company\\sustainability.md",
+        "company\\about.md",
+        "company\\careers.md",
+        "company\\contact.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 0.5,
+      "passed": true,
+      "llm_score": 0.8,
+      "llm_reason": "The answer correctly states the target year 2030 but omits the mention of Scope 3."
+    },
+    {
+      "id": "q29",
+      "category": "company",
+      "question": "What employee discount do TechNova staff get on Nova products?",
+      "predicted_answer": "TechNova employees receive a 30% discount on all Nova products (source: 1).",
+      "retrieved_sources": [
+        "company\\careers.md",
+        "company\\contact.md",
+        "faqs\\trade_in.md",
+        "policies\\terms_of_service.md",
+        "products\\nova_speaker.md"
+      ],
+      "retrieval_hit": false,
+      "keyword_score": 1.0,
+      "passed": true,
+      "llm_score": 1.0,
+      "llm_reason": "The student correctly states that TechNova employees get a 30% discount on Nova products and cites the source."
+    }
+  ]
+}

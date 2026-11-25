@@ -1,0 +1,27 @@
+# ── Core LLM / RAG ──────────────────────────────────────────────
+langchain==0.3.25
+langchain-community==0.3.23
+langchain-openai==0.3.16
+langchain-huggingface==0.1.2
+langchain-chroma==0.2.4
+langchain-core==0.3.57
+
+# ── Vector DB + Embeddings ──────────────────────────────────────
+chromadb==0.6.3
+sentence-transformers==3.4.1
+transformers==4.48.3
+tokenizers==0.21.4
+
+# ── UI ──────────────────────────────────────────────────────────
+gradio==4.44.1          # 4.x — much smaller wheel (~8 MB vs 50 MB for 6.x)
+
+# ── Notebook kernel ─────────────────────────────────────────────
+ipykernel==6.29.5
+ipython==8.26.0
+
+# ── Utilities ───────────────────────────────────────────────────
+python-dotenv==1.0.1
+openai==1.78.0
+tiktoken==0.9.0
+pandas==2.2.3
+pydantic==2.10.6

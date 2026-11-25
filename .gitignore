@@ -1,0 +1,28 @@
+# Environment variables & API keys
+.env
+.env.*
+!.env.example
+
+# Python Virtual Environment
+.venv/
+venv/
+env/
+
+# Generated Vector Database (ChromaDB)
+vector_db/
+*.sqlite3
+
+# Python cache & temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Editor & OS temporary files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
